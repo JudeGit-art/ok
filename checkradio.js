@@ -215,6 +215,13 @@ var n5= (Number(v1)+Number(v2)+Number(v3));
 neuroticism=( n5/3).toFixed(2);
 console.log(neuroticism)
 
+localStorage.setItem('openness',openness);
+localStorage.setItem('conscientiousness',conscientiousness);
+localStorage.setItem('extroversion',extroversion);
+localStorage.setItem('agreeableness',agreeableness);
+localStorage.setItem('neuroticism',neuroticism);
+
+
 
 }
 
@@ -487,39 +494,42 @@ console.log(exaggeratedsafetybehavior);
 var n8= (Number(va2)+Number(va7)+Number(va10)+Number(va15)+Number(va17)+Number(va18)+Number(va20));
  hostilebehaviors= (n8/7).toFixed(2);
 console.log(hostilebehaviors);
+
+localStorage.setItem('anxietybasedperformancedeficits',anxietybasedperformancedeficits);
+localStorage.setItem('exaggeratedsafetybehavior',exaggeratedsafetybehavior);
 localStorage.setItem('hostilebehaviors',hostilebehaviors);
 
-valueset1();
+
 
 } 
 
 
-function valueset1()
-{
-    window.location.href =("main_int.html");
+// function valueset1()
+// {
+//     window.location.href =("main_int.html");
     
-    const openness = localStorage.getItem('openness');
-    const hostilebehaviors = localStorage.getItem('hostilebehaviors');
+//     const openness = localStorage.getItem('openness');
+//     const hostilebehaviors = localStorage.getItem('hostilebehaviors');
 
     
 
-document.getElementsByName("openness").value=openness;
-document.getElementsByName("conscientiousness").value=conscientiousness;
-document.getElementsByName("extroversion").value=extroversion;
-document.getElementsByName("agreeableness").value=agreeableness;
-document.getElementsByName("neuroticism").value=neuroticism;
-document.getElementsByName("anxietybasedperformancedeficits").value=anxietybasedperformancedeficits;
-document.getElementsByName("exaggeratedsafetybehavior").value=exaggeratedsafetybehavior;
-document.getElementsByName("hostilebehaviors").value=hostilebehaviors;
-console.log(openness)
-console.log(conscientiousness)
-console.log(extroversion)
-console.log(agreeableness)
-console.log(neuroticism)
-console.log(anxietybasedperformancedeficits)
-console.log(exaggeratedsafetybehavior)
-console.log(hostilebehaviors)
-}
+// document.getElementsByName("openness").value=openness;
+// document.getElementsByName("conscientiousness").value=conscientiousness;
+// document.getElementsByName("extroversion").value=extroversion;
+// document.getElementsByName("agreeableness").value=agreeableness;
+// document.getElementsByName("neuroticism").value=neuroticism;
+// document.getElementsByName("anxietybasedperformancedeficits").value=anxietybasedperformancedeficits;
+// document.getElementsByName("exaggeratedsafetybehavior").value=exaggeratedsafetybehavior;
+// document.getElementsByName("hostilebehaviors").value=hostilebehaviors;
+// console.log(openness)
+// console.log(conscientiousness)
+// console.log(extroversion)
+// console.log(agreeableness)
+// console.log(neuroticism)
+// console.log(anxietybasedperformancedeficits)
+// console.log(exaggeratedsafetybehavior)
+// console.log(hostilebehaviors)
+// }
 
 
 
